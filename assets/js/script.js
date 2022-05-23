@@ -6,15 +6,3 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
 },
 });
-
-// jquery
-
-$(document).ready(main);
-
-counter = 1;
-
-function main() {
-  $('.navbar__menu-burguer').click(function(){
-
-  });
-};

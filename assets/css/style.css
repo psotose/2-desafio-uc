@@ -11,9 +11,6 @@
 }
 
 /* navbar section */
-.navbar__menu-burguer {
-  display: none;
-}
 
 .navbar {
   background-color: #276A76;
@@ -22,6 +19,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.navbar__nav {
+  margin-right: 3rem;
 }
 
 .navbar__container-list {
@@ -162,41 +163,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .navbar {
-    position: fixed;
-    width: 80%;
-    height: 100%;
-    margin: 0;
-    display: column;
-    left: -100%;
-  }
-
-  .navbar__list {
-    display: block;
-    float: none;
-    border-bottom: 1px solid rgba(255, 255,255, .3);
-    padding: 1rem;
-  }
-
-  .navbar__menu-burguer {
-    display: block;
-    width: 60%;
-    background-color: #276A76;
-  }
-
-  .navbar__menu-burguer-button {
-    color: #fff;
-    font-weight: bold;
-    font-size: 25px;
-    text-decoration: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .navbar__menu-burguer-span {
-    float: right;
-  }
 
   .detail-columns {
     flex-direction: row;
@@ -214,12 +180,22 @@
 
 @media screen and (max-width: 768px) {
 
+  .navbar__logo {
+    margin-left: 22%
+  }
+
+  .navbar__list {
+    display: none;
+  }
   .detail-columns {
     flex-direction: column;
   }
 
   .detail-columns__container{
     width: 100%;
+  }
+  .detail-columns__container-border {
+    border-bottom: 1px solid #001a39;
   }
 
   .footer__ul {
